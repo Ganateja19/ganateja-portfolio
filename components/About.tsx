@@ -40,7 +40,7 @@ const About = () => {
                 <div className="relative h-64 md:h-full min-h-[300px] w-full rounded-2xl overflow-hidden border border-white/10 group">
                     <div className="absolute inset-0 bg-blue-500/20 group-hover:bg-transparent transition-colors z-10" />
                     <img
-                        src="/profile.jpg"
+                        src="./profile.jpg"
                         alt="Ganateja Thurpati"
                         className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-100"
                     />

@@ -56,7 +56,7 @@ const Hero = () => {
                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </Link>
                     <a
-                        href="/resume.pdf"
+                        href="./resume.pdf"
                         download
                         className="flex items-center gap-2 border border-white/20 hover:border-white/40 hover:bg-white/5 text-white px-6 py-3 rounded-lg font-medium transition-all"
                     >

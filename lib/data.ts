@@ -50,7 +50,7 @@ export const projects = [
     techStack: ["Python", "scikit-learn", "HTML5", "CSS3", "JavaScript"],
     link: "https://ganateja19.github.io/iris-classifier-ui/",
     github: "https://github.com/Ganateja19/iris-classifier-ui",
-    image: "/iris-project.jpeg",
+    image: "./iris-project.jpeg",
   },
   {
     title: "Chocolate Sales Dashboard",
@@ -58,7 +58,7 @@ export const projects = [
     techStack: ["Data Visualization", "Dashboarding", "Analytics"],
     link: "https://github.com/Ganateja19/Interactive-Chocolate-Sales-Performance-Dashboard",
     github: "https://github.com/Ganateja19/Interactive-Chocolate-Sales-Performance-Dashboard",
-    image: "/chocolate-dashboard.jpg",
+    image: "./chocolate-dashboard.jpg",
   },
   {
     title: "EduMind AI - Student Performance Predictor",
@@ -66,7 +66,7 @@ export const projects = [
     techStack: ["Python", "Machine Learning", "Streamlit", "Scikit-learn"],
     link: "https://github.com/Ganateja19/EduMind-AI-End-to-End-Student-Performance-Predictor",
     github: "https://github.com/Ganateja19/EduMind-AI-End-to-End-Student-Performance-Predictor",
-    image: "/edumind-ai.png",
+    image: "./edumind-ai.png",
   },
 ];
 
@@ -89,36 +89,36 @@ export const certifications = [
   {
     title: "AWS Certified Cloud Practitioner",
     issuer: "Amazon Web Services",
-    image: "/AWS_Cloud_Practioner.jpg"
+    image: "./AWS_Cloud_Practioner.jpg"
   },
   {
     title: "Generative AI Fundamentals",
     issuer: "Databricks",
-    image: "/Databricks_GENAI.jpg"
+    image: "./Databricks_GENAI.jpg"
   },
   {
     title: "Lean Six Sigma Green Belt",
     issuer: "Council for Six Sigma Certification",
-    image: "/Lean_Sixsigma.png"
+    image: "./Lean_Sixsigma.png"
   },
   {
     title: "Google Data Analytics Professional Certificate",
     issuer: "Coursera",
-    image: "/Coursera_GD.png"
+    image: "./Coursera_GD.png"
   },
   {
     title: "AWS Certified Machine Learning",
     issuer: "Amazon Web Services",
-    image: "/AWS_ML&AI.png"
+    image: "./AWS_ML&AI.png"
   },
   {
     title: "Databricks Lakehouse Fundamentals",
     issuer: "Databricks",
-    image: "/Databricks_Fundamentals.jpg"
+    image: "./Databricks_Fundamentals.jpg"
   },
   {
     title: "Verzeo Certification",
     issuer: "Verzeo",
-    image: "/Verzeo.jpg"
+    image: "./Verzeo.jpg"
   }
 ];
