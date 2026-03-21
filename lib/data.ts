@@ -2,7 +2,7 @@
 export const personalData = {
   name: "Ganateja Thurpati",
   role: "Data Scientist",
-  bio: "Analytical and detail-oriented Data Scientist with 5+ years of experience driving data-backed decision-making.",
+  bio: "Data Scientist with 5+ years of experience applying machine learning, multi-variate modeling, statistical analysis, and ETL automation to drive strategic business decisions.",
   email: "ganateja19@gmail.com",
   socials: {
     github: "https://github.com/Ganateja19",
@@ -23,57 +23,23 @@ export const skills = {
 export const experience = [
   {
     company: "United Healthcare Group",
-    role: "Data Analyst",
-    period: "10/2025 – Present",
-    description: [
-      "Developed dynamic Power BI dashboards with advanced visual analytics and designed interactive Tableau dashboards integrating AWS and multi-source data to deliver real-time insights for stakeholders.",
-      "Optimized and designed SQL functions, complex queries, stored procedures, indexing strategies, and performance tuning to improve query speed and database efficiency across large datasets.",
-      "Led Agile-driven data projects, ensuring high-quality code, smooth sprint execution, and on-time delivery of analytics solutions.",
-      "Engineered Python-based ETL scripts using PySpark that reduced clinical data processing latency by 35%, enabling near real-time ingestion of 500GB+ daily patient records.",
-      "Developed scalable data pipelines using AWS Glue, enabling automated ingestion, transformation and integration with downstream analytics layers.",
-      "Integrated pipelines with GCP BigQuery to support seamless cross-cloud data processing and analytics workloads.",
-      "Engineered AWS Lambda for real-time processing and used Azure Data Factory to orchestrate automated ETL workflows.",
-      "Developed predictive models using TensorFlow to identify high-risk patient segments, contributing to a 12% reduction in hospital readmission rates."
-    ]
+    role: "Data Scientist",
+    period: "Oct 2025 - Present"
   },
   {
     company: "University of Memphis",
-    role: "Data Analyst",
-    period: "01/2024 – 09/2025",
-    description: [
-      "Architected a seamless data pipeline between Workday Finance and Snowflake, consolidating $50M+ in annual budget data and reducing multi-departmental reporting overhead by 25%.",
-      "Automated scheduled Python refresh pipelines for budget and spend KPIs, reducing manual data pulls and refresh effort by ~30%.",
-      "Designed and maintained Power BI dashboards tracking budget vs. actuals, burn rate, forecast variance, and cost center performance, improving visibility for operational planning.",
-      "Implemented data quality checks and validation rules to improve reliability and reduce reporting discrepancies in budget datasets.",
-      "Used R for trend analysis and statistical testing on budget KPIs producing reproducible outputs to support periodic operational reviews.",
-      "Partnered with operations stakeholders to gather requirements, define KPI logic, and produce documentation/user guides so non-technical users could interpret metrics confidently."
-    ]
+    role: "Research Data Scientist",
+    period: "Jan 2024 - Sep 2025"
   },
   {
     company: "Capgemini",
-    role: "Data Analyst",
-    period: "01/2022 – 12/2023",
-    description: [
-      "Developed and maintained SQL queries, views, and stored procedures to support enterprise reporting across CRM and operational systems.",
-      "Built automated ETL workflows using Python, Node.js, SQL, and AWS (Lambda, S3, Airflow) to process high-volume datasets and deliver analysis-ready tables.",
-      "Optimized Snowflake warehouse performance and query execution plans, reducing dashboard refresh times by 30% and improving system reliability.",
-      "Reduced manual reporting effort by 40% by automating recurring KPI refreshes, scheduled data loads, and standardized report outputs.",
-      "Instituted data quality controls within Snowflake pipelines, including reconciliation checks and anomaly monitoring, to ensure data accuracy.",
-      "Partnered with product owners and business stakeholders to gather requirements, define KPI logic, and document metric definitions and reporting specifications."
-    ]
+    role: "Junior Data Scientist",
+    period: "Jan 2022 - Dec 2023"
   },
   {
     company: "Tech Mahindra",
     role: "Data Analyst",
-    period: "09/2020 – 12/2021",
-    description: [
-      "Developed 15+ Tableau dashboards and Excel reports, improving data visualization efficiency and insights.",
-      "Optimized complex SQL queries and tuned database performance to enhance the accuracy and speed of software analytics reporting.",
-      "Automated data validation using Python and Airflow, ensuring high data quality and consistency.",
-      "Built big data pipelines with Hadoop, Hive, and Spark, improving processing speed and scalability.",
-      "Translated complex data into actionable insights, supporting product and feature improvements effectively.",
-      "Integrated GitLab for version control and collaboration, streamlining data workflows and version tracking."
-    ]
+    period: "Sep 2020 - Dec 2021"
   }
 ];
 

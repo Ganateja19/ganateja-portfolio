@@ -23,9 +23,7 @@ const About = () => {
                         transition={{ delay: 0.1 }}
                         className="text-gray-400 text-lg leading-relaxed"
                     >
-                        Analytical and detail-oriented Data Analyst with 5+ years of experience driving data-backed decision-making across healthcare, finance, and tech domains.
-                        Expert in architecting scalable ETL workflows and automating analytics solutions using AWS, Azure, GCP, and Snowflake.
-                        Proven track record of improving forecasting accuracy by 15%, enhancing pipeline efficiency by 30%, and developing 15+ interactive dashboards to boost executive-level reporting.
+                        Data Scientist with 5+ years of experience applying machine learning, multi-variate modeling, statistical analysis, and ETL automation to drive strategic business decisions. Proficient in Python and R for predictive model development, data mining, and consumer analytics, including retention modeling and lead optimization.
                     </motion.p>
                     <motion.p
                         initial={{ opacity: 0, x: -20 }}
@@ -34,7 +32,7 @@ const About = () => {
                         transition={{ delay: 0.2 }}
                         className="text-gray-400 text-lg leading-relaxed"
                     >
-                        I am passionate about leveraging data to solve complex business problems and drive growth.
+                        Experienced in deploying models via MLOps workflows and collaborating with analytics and IT teams to communicate complex technical insights to non-technical stakeholders. Proven ability to leverage behavioral data and large-scale datasets across AWS, Azure, and Snowflake to deliver measurable operational impact.
                     </motion.p>
                 </div>
 

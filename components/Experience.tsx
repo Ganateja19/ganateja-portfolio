@@ -38,11 +38,6 @@ const Experience = () => {
                                     {item.period}
                                 </div>
                             </div>
-                            <ul className="list-disc list-outside ml-4 space-y-2 text-gray-400 text-sm leading-relaxed">
-                                {item.description.map((desc, i) => (
-                                    <li key={i}>{desc}</li>
-                                ))}
-                            </ul>
                         </motion.div>
                     </div>
                 ))}
