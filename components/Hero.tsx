@@ -57,14 +57,6 @@ const Hero = () => {
                             View Projects
                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                         </Link>
-                        <a
-                            href="./resume.pdf"
-                            download
-                            className="group flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/30 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 backdrop-blur-md hover:-translate-y-1"
-                        >
-                            Download Resume
-                            <Download className="w-5 h-5 group-hover:-translate-y-1 transition-transform" />
-                        </a>
                     </motion.div>
                 </div>
             </SectionWrapper>

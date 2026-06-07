@@ -153,17 +153,24 @@ export const education = [
     institution: "University of Memphis",
     degree: "Master of Science in Data Science",
     period: "Memphis, TN",
-    coursework: "Fundamentals of Data Science, Machine Learning, Database Systems (SQL), Data Mining, Advanced Statistical Learning, Big Data Analytics, Neural Networks, Data Visualization."
+    coursework: "Fundamentals of Data Science, Machine Learning, Database Systems (SQL), Data Mining, Advanced Statistical Learning, Big Data Analytics, Neural Networks, Data Visualization.",
+    image: "./UofM.jpg"
   },
   {
     institution: "Indian Institute of Information Technology, Jabalpur",
     degree: "Bachelor of Technology in Electronics & Communication Engineering",
     period: "India",
-    coursework: "Data Structures & Algorithms, Probability & Statistics, Linear Algebra, Digital Signal Processing, Database Management Systems, Object-Oriented Programming, Computer Networks, Microprocessors & Interfacing."
+    coursework: "Data Structures & Algorithms, Probability & Statistics, Linear Algebra, Digital Signal Processing, Database Management Systems, Object-Oriented Programming, Computer Networks, Microprocessors & Interfacing.",
+    image: "./IIITDMJ.jpg"
   }
 ];
 
 export const certifications = [
+  {
+    title: "Salesforce AI Associate",
+    issuer: "Salesforce",
+    image: "./Salesforce AI associate.png"
+  },
   {
     title: "Supply Chain Management A-Z: Operations & Logistics",
     issuer: "Udemy",

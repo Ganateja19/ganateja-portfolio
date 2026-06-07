@@ -21,7 +21,14 @@ const Education = () => {
                         transition={{ delay: index * 0.1 }}
                         className="bg-white/5 border border-white/10 p-8 rounded-2xl hover:border-blue-500/30 transition-colors relative overflow-hidden group"
                     >
-                        <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <div className="absolute inset-0 z-0">
+                            <div 
+                                className="absolute inset-0 bg-cover bg-center opacity-10 group-hover:opacity-20 transition-opacity duration-500"
+                                style={{ backgroundImage: `url('${edu.image}')` }}
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-[#030712] via-[#030712]/80 to-transparent" />
+                        </div>
+                        <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity z-10">
                             <GraduationCap className="w-24 h-24 text-blue-500" />
                         </div>
 
