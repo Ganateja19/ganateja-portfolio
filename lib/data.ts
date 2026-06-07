@@ -167,9 +167,10 @@ export const education = [
 
 export const certifications = [
   {
-    title: "Salesforce AI Associate",
-    issuer: "Salesforce",
-    image: "./Salesforce AI associate.png"
+    title: "3-Day Generative AI Bootcamp",
+    issuer: "GrowthSchool / Outskill",
+    image: "./3_Day_AI_Bootcamp.png",
+    isNew: true
   },
   {
     title: "Supply Chain Management A-Z: Operations & Logistics",
@@ -177,14 +178,24 @@ export const certifications = [
     image: "./Supply_Chain_Management_Logistics.png"
   },
   {
-    title: "Generative AI Bootcamp",
-    issuer: "Outskill",
-    image: "./GEN_AI_Certification.png"
+    title: "Lean Six Sigma Green Belt",
+    issuer: "Council for Six Sigma Certification",
+    image: "./Lean_Sixsigma.png"
   },
   {
-    title: "3-Day Generative AI Bootcamp",
-    issuer: "GrowthSchool / Outskill",
-    image: "./3_Day_AI_Bootcamp.png"
+    title: "Salesforce AI Associate",
+    issuer: "Salesforce",
+    image: "./Salesforce AI associate.png"
+  },
+  {
+    title: "Databricks Lakehouse Fundamentals",
+    issuer: "Databricks",
+    image: "./Databricks_Fundamentals.jpg"
+  },
+  {
+    title: "Generative AI Fundamentals",
+    issuer: "Databricks",
+    image: "./Databricks_GENAI.jpg"
   },
   {
     title: "AWS Certified Cloud Practitioner",
@@ -197,24 +208,14 @@ export const certifications = [
     image: "./AWS_ML&AI.png"
   },
   {
-    title: "Generative AI Fundamentals",
-    issuer: "Databricks",
-    image: "./Databricks_GENAI.jpg"
-  },
-  {
-    title: "Databricks Lakehouse Fundamentals",
-    issuer: "Databricks",
-    image: "./Databricks_Fundamentals.jpg"
+    title: "Generative AI Bootcamp",
+    issuer: "Outskill",
+    image: "./GEN_AI_Certification.png"
   },
   {
     title: "Google Data Analytics Professional Certificate",
     issuer: "Coursera",
     image: "./Coursera_GD.png"
-  },
-  {
-    title: "Lean Six Sigma Green Belt",
-    issuer: "Council for Six Sigma Certification",
-    image: "./Lean_Sixsigma.png"
   },
   {
     title: "Verzeo Certification",

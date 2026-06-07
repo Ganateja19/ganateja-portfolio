@@ -24,6 +24,11 @@ const Certifications = () => {
                     >
                         {/* Image Area */}
                         <div className="h-48 w-full relative overflow-hidden bg-black/50">
+                            {(cert as any).isNew && (
+                                <div className="absolute top-3 right-3 z-20 bg-blue-600 text-white text-[10px] font-black tracking-wider px-2 py-1 rounded shadow-[0_0_15px_rgba(37,99,235,0.8)] border border-blue-400/30">
+                                    NEW
+                                </div>
+                            )}
                             <div className="absolute inset-0 bg-blue-500/10 group-hover:bg-transparent transition-colors duration-500 z-10" />
                             <img
                                 src={cert.image}
