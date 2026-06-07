@@ -2,79 +2,65 @@
 
 import { motion } from "framer-motion";
 import SectionWrapper from "./SectionWrapper";
-import { skills } from "@/lib/data";
+import { skillCategories } from "@/lib/data";
 
-const skillIcons: Record<string, string> = {
-    "Python": "🐍",
-    "SQL": "🗃️",
-    "PySpark": "⚡",
-    "AWS S3": "☁️",
-    "Snowflake": "❄️",
-    "Airflow": "🌬️",
-    "dbt": "🔧",
-    "Kinesis": "🌊",
-    "Lambda": "λ",
-    "Great Expectations": "✅",
-    "Docker": "🐳",
-    "Git": "📦",
-    "Power BI": "📊",
-    "PostgreSQL": "🐘",
-    "Kafka": "📡",
+const categoryThemes: Record<string, { bg: string, text: string, border: string, icon: string }> = {
+    "DATA ENGINEERING (Core)": { bg: "bg-blue-500", text: "text-blue-300", border: "border-blue-500/20", icon: "🛠️" },
+    "ERP & SYSTEMS (JD Critical)": { bg: "bg-indigo-500", text: "text-indigo-300", border: "border-indigo-500/20", icon: "💼" },
+    "REAL-TIME PROCESSING": { bg: "bg-orange-500", text: "text-orange-300", border: "border-orange-500/20", icon: "⚡" },
+    "DATA QUALITY & GOVERNANCE": { bg: "bg-green-500", text: "text-green-300", border: "border-green-500/20", icon: "🛡️" },
+    "CLOUD & PLATFORMS": { bg: "bg-cyan-500", text: "text-cyan-300", border: "border-cyan-500/20", icon: "☁️" },
+    "ORCHESTRATION & AUTOMATION": { bg: "bg-purple-500", text: "text-purple-300", border: "border-purple-500/20", icon: "⚙️" },
+    "AI & EMERGING": { bg: "bg-rose-500", text: "text-rose-300", border: "border-rose-500/20", icon: "🧠" },
+    "DEVOPS & INFRASTRUCTURE": { bg: "bg-slate-500", text: "text-slate-300", border: "border-slate-500/20", icon: "🏗️" },
 };
 
-const skillColors: Record<string, { bg: string; border: string; text: string; glow: string }> = {
-    "Python": { bg: "bg-yellow-500/10", border: "border-yellow-500/20", text: "text-yellow-300", glow: "hover:shadow-[0_0_25px_rgba(234,179,8,0.25)]" },
-    "SQL": { bg: "bg-blue-500/10", border: "border-blue-500/20", text: "text-blue-300", glow: "hover:shadow-[0_0_25px_rgba(59,130,246,0.25)]" },
-    "PySpark": { bg: "bg-orange-500/10", border: "border-orange-500/20", text: "text-orange-300", glow: "hover:shadow-[0_0_25px_rgba(249,115,22,0.25)]" },
-    "AWS S3": { bg: "bg-amber-500/10", border: "border-amber-500/20", text: "text-amber-300", glow: "hover:shadow-[0_0_25px_rgba(245,158,11,0.25)]" },
-    "Snowflake": { bg: "bg-cyan-500/10", border: "border-cyan-500/20", text: "text-cyan-300", glow: "hover:shadow-[0_0_25px_rgba(6,182,212,0.25)]" },
-    "Airflow": { bg: "bg-teal-500/10", border: "border-teal-500/20", text: "text-teal-300", glow: "hover:shadow-[0_0_25px_rgba(20,184,166,0.25)]" },
-    "dbt": { bg: "bg-rose-500/10", border: "border-rose-500/20", text: "text-rose-300", glow: "hover:shadow-[0_0_25px_rgba(244,63,94,0.25)]" },
-    "Kinesis": { bg: "bg-purple-500/10", border: "border-purple-500/20", text: "text-purple-300", glow: "hover:shadow-[0_0_25px_rgba(168,85,247,0.25)]" },
-    "Lambda": { bg: "bg-amber-500/10", border: "border-amber-500/20", text: "text-amber-300", glow: "hover:shadow-[0_0_25px_rgba(245,158,11,0.25)]" },
-    "Great Expectations": { bg: "bg-green-500/10", border: "border-green-500/20", text: "text-green-300", glow: "hover:shadow-[0_0_25px_rgba(34,197,94,0.25)]" },
-    "Docker": { bg: "bg-sky-500/10", border: "border-sky-500/20", text: "text-sky-300", glow: "hover:shadow-[0_0_25px_rgba(14,165,233,0.25)]" },
-    "Git": { bg: "bg-red-500/10", border: "border-red-500/20", text: "text-red-300", glow: "hover:shadow-[0_0_25px_rgba(239,68,68,0.25)]" },
-    "Power BI": { bg: "bg-yellow-500/10", border: "border-yellow-500/20", text: "text-yellow-300", glow: "hover:shadow-[0_0_25px_rgba(234,179,8,0.25)]" },
-    "PostgreSQL": { bg: "bg-indigo-500/10", border: "border-indigo-500/20", text: "text-indigo-300", glow: "hover:shadow-[0_0_25px_rgba(99,102,241,0.25)]" },
-    "Kafka": { bg: "bg-slate-400/10", border: "border-slate-400/20", text: "text-slate-300", glow: "hover:shadow-[0_0_25px_rgba(148,163,184,0.25)]" },
-};
-
-const defaultColor = { bg: "bg-blue-500/10", border: "border-blue-500/20", text: "text-blue-300", glow: "hover:shadow-[0_0_25px_rgba(59,130,246,0.25)]" };
+const defaultTheme = { bg: "bg-blue-500", text: "text-blue-300", border: "border-blue-500/20", icon: "🔧" };
 
 const Skills = () => {
     return (
         <SectionWrapper id="skills">
             <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400 text-center mb-16">
-                Technical Skills
+                Technical Expertise
             </h2>
 
-            <div className="max-w-5xl mx-auto">
-                <div className="flex flex-wrap justify-center gap-4 md:gap-5">
-                    {skills.map((skill, index) => {
-                        const colors = skillColors[skill] || defaultColor;
-                        const icon = skillIcons[skill] || "⚙️";
+            <div className="max-w-7xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {skillCategories.map((cat, index) => {
+                        const theme = categoryThemes[cat.category] || defaultTheme;
                         
                         return (
                             <motion.div
-                                key={skill}
-                                initial={{ opacity: 0, y: 20, scale: 0.9 }}
-                                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                                key={cat.category}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, margin: "-30px" }}
-                                transition={{ duration: 0.4, delay: index * 0.05 }}
-                                whileHover={{ scale: 1.08, y: -4 }}
-                                className={`group relative cursor-default`}
+                                transition={{ duration: 0.4, delay: index * 0.1 }}
+                                className="group relative bg-white/5 border border-white/10 hover:border-white/20 rounded-2xl p-6 flex flex-col gap-5 overflow-hidden transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-2xl"
                             >
-                                <div className={`relative flex items-center gap-3 px-5 py-3 md:px-6 md:py-3.5 rounded-2xl ${colors.bg} border ${colors.border} ${colors.glow} hover:border-opacity-60 backdrop-blur-sm transition-all duration-300`}>
-                                    {/* Icon */}
-                                    <span className="text-lg md:text-xl flex-shrink-0">
-                                        {icon}
+                                {/* Background subtle glow effect on hover */}
+                                <div className={`absolute -top-10 -right-10 w-40 h-40 rounded-full blur-[60px] opacity-10 group-hover:opacity-30 transition-opacity duration-500 ${theme.bg}`} />
+                                
+                                {/* Category Header */}
+                                <div className="flex items-center gap-3 z-10">
+                                    <span className="text-2xl drop-shadow-md">
+                                        {theme.icon}
                                     </span>
-                                    
-                                    {/* Skill name */}
-                                    <span className={`text-sm md:text-base font-semibold ${colors.text} whitespace-nowrap`}>
-                                        {skill}
-                                    </span>
+                                    <h3 className={`font-bold tracking-wide text-lg ${theme.text}`}>
+                                        {cat.category}
+                                    </h3>
+                                </div>
+                                
+                                {/* Skill Tags */}
+                                <div className="flex flex-wrap gap-2 z-10">
+                                    {cat.skills.map(skill => (
+                                        <span 
+                                            key={skill} 
+                                            className="px-3 py-1.5 bg-black/40 border border-white/5 rounded-lg text-sm text-gray-300 hover:text-white hover:bg-black/60 hover:border-white/20 transition-all cursor-default"
+                                        >
+                                            {skill}
+                                        </span>
+                                    ))}
                                 </div>
                             </motion.div>
                         );

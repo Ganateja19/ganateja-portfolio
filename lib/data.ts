@@ -34,10 +34,39 @@ export const impactMetrics = [
   { value: "20+", label: "Production Pipelines" }
 ];
 
-export const skills = [
-  "Python", "SQL", "PySpark", "AWS S3", "Snowflake", "Airflow", "dbt",
-  "Kinesis", "Lambda", "Great Expectations", "Docker", "Git", "Power BI",
-  "PostgreSQL", "Kafka"
+export const skillCategories = [
+  {
+    category: "DATA ENGINEERING (Core)",
+    skills: ["Python", "SQL", "PySpark", "Data Modeling", "ETL/ELT", "Medallion Architecture", "AWS S3", "AWS Glue", "Snowflake", "Airflow", "dbt", "Data Contracts"]
+  },
+  {
+    category: "ERP & SYSTEMS (JD Critical)",
+    skills: ["Salesforce", "Oracle", "Power Query", "System Integration", "API Connectors"]
+  },
+  {
+    category: "REAL-TIME PROCESSING",
+    skills: ["AWS Kinesis", "Kafka", "Apache Spark", "Stream Processing", "Windowing", "Batch Processing", "Distributed Systems"]
+  },
+  {
+    category: "DATA QUALITY & GOVERNANCE",
+    skills: ["Great Expectations", "Data Contracts", "Schema Management", "Data Lineage", "Master Data Management", "Data Quality Frameworks", "Monitoring & Alerting", "Anomaly Detection", "SLA Management", "Compliance"]
+  },
+  {
+    category: "CLOUD & PLATFORMS",
+    skills: ["AWS (S3, Glue, Kinesis, Lambda, CloudWatch)", "Snowflake", "Power BI", "Tableau", "Looker", "PostgreSQL", "MySQL", "SQL Server"]
+  },
+  {
+    category: "ORCHESTRATION & AUTOMATION",
+    skills: ["Apache Airflow", "dbt", "N8N", "Prefect", "Dagster", "CI/CD Pipelines", "GitHub Actions", "GitLab CI", "Jenkins"]
+  },
+  {
+    category: "AI & EMERGING",
+    skills: ["LangChain", "Prompt Engineering", "RAG", "Vector Databases", "OpenAI API", "Anomaly Detection", "Feature Engineering", "ML Models"]
+  },
+  {
+    category: "DEVOPS & INFRASTRUCTURE",
+    skills: ["Docker", "Kubernetes", "Git", "GitHub", "GitLab", "Linux/Bash", "Jenkins"]
+  }
 ];
 
 export const experience = [
