@@ -32,22 +32,24 @@ const Experience = () => {
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true, margin: "-50px" }}
                                     transition={{ duration: 0.5, delay: index * 0.1 }}
-                                    className="w-full pl-20 md:pl-0 md:w-[calc(50%-3rem)] z-10 shrink-0"
+                                    className={`w-full pl-20 md:pl-0 md:w-[calc(50%-3rem)] z-10 shrink-0 flex ${
+                                        index % 2 === 0 ? "md:justify-start" : "md:justify-end"
+                                    }`}
                                 >
-                                    <div className="relative overflow-hidden bg-white/5 border border-white/10 hover:border-blue-500/40 rounded-3xl p-6 md:p-8 transition-all duration-500 shadow-lg hover:shadow-[0_15px_40px_rgba(59,130,246,0.15)] group-hover:-translate-y-2 backdrop-blur-md">
+                                    <div className="relative w-fit overflow-hidden bg-white/5 border border-white/10 hover:border-blue-500/40 rounded-lg p-5 transition-all duration-500 shadow-lg hover:shadow-[0_15px_40px_rgba(59,130,246,0.15)] group-hover:-translate-y-1 backdrop-blur-md">
                                         <div className="absolute inset-0 bg-gradient-to-br from-blue-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" />
                                         
-                                        <div className="relative z-10 flex flex-col gap-4">
-                                            <div className="flex flex-col gap-1">
-                                                <h3 className="text-2xl md:text-4xl font-extrabold text-white group-hover:text-blue-300 transition-colors tracking-tight leading-tight">
+                                        <div className="relative z-10 flex flex-col gap-2 whitespace-nowrap">
+                                            <div className="flex flex-col gap-0.5">
+                                                <h3 className="text-xl md:text-2xl font-bold text-white group-hover:text-blue-300 transition-colors tracking-tight">
                                                     {item.role}
                                                 </h3>
-                                                <h4 className="text-lg md:text-xl font-semibold text-blue-400 tracking-wide mt-1">
+                                                <h4 className="text-sm md:text-base font-semibold text-blue-400">
                                                     {item.company}
                                                 </h4>
                                             </div>
                                             
-                                            <div className="inline-flex w-fit items-center px-4 py-1.5 rounded-lg bg-white/5 text-gray-300 font-mono text-sm md:text-base tracking-wide border border-white/10 group-hover:border-blue-500/30 group-hover:bg-blue-500/10 group-hover:text-blue-300 transition-all">
+                                            <div className="text-xs md:text-sm font-mono text-gray-400 mt-1">
                                                 {item.period}
                                             </div>
                                         </div>
