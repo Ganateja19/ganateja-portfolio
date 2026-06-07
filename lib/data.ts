@@ -55,6 +55,16 @@ export const experience = [
     company: "Tech Mahindra",
     role: "Junior Data Engineer",
     period: "Sep 2020 - Dec 2021"
+  },
+  {
+    company: "BDSR Solutions LLP",
+    role: "Data Science Intern",
+    period: "Feb 2020 - Jul 2020"
+  },
+  {
+    company: "Verzeo",
+    role: "Machine Learning Intern",
+    period: "Apr 2020 - May 2020"
   }
 ];
 
