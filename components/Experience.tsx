@@ -39,15 +39,15 @@ const Experience = () => {
                                     <div className="relative w-fit h-fit flex flex-col justify-center overflow-hidden bg-white/5 border border-white/10 hover:border-blue-500/40 rounded-xl p-5 md:p-6 transition-all duration-500 shadow-lg hover:shadow-[0_15px_40px_rgba(59,130,246,0.15)] group-hover:-translate-y-1 backdrop-blur-md">
                                         <div className="absolute inset-0 bg-gradient-to-br from-blue-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" />
                                         
-                                        <div className="relative z-10 flex flex-col gap-2 whitespace-nowrap">
-                                            <h3 className="text-xl md:text-2xl font-bold text-white group-hover:text-blue-300 transition-colors tracking-tight leading-tight">
+                                        <div className="relative z-10 flex flex-col gap-2">
+                                            <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-blue-300 transition-colors tracking-tight leading-tight break-words">
                                                 {item.role}
                                             </h3>
-                                            <h4 className="text-sm md:text-base font-semibold text-blue-400">
+                                            <h4 className="text-sm font-semibold text-blue-400 break-words">
                                                 {item.company}
                                             </h4>
                                             
-                                            <div className="text-xs md:text-sm font-mono text-gray-400 mt-1 bg-black/30 px-3 py-1.5 rounded-md border border-white/5 w-fit">
+                                            <div className="text-xs font-mono text-gray-400 mt-1 bg-black/30 px-3 py-1.5 rounded-md border border-white/5 w-fit">
                                                 {item.period}
                                             </div>
                                         </div>
