@@ -1,4 +1,4 @@
 1:"$Sreact.fragment"
 2:I[39756,["/ganateja-portfolio/_next/static/chunks/ff1a16fafef87110.js","/ganateja-portfolio/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
 3:I[37457,["/ganateja-portfolio/_next/static/chunks/ff1a16fafef87110.js","/ganateja-portfolio/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
-0:{"buildId":"St2GFgivt8uqT_4KFOyqE","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"LD9RiOppos1RM8O_AqOtG","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
