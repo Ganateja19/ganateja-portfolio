@@ -36,12 +36,12 @@ const Experience = () => {
                                         index % 2 === 0 ? "md:justify-start" : "md:justify-end"
                                     }`}
                                 >
-                                    <div className="relative w-56 md:w-64 min-h-[280px] flex flex-col justify-center overflow-hidden bg-white/5 border border-white/10 hover:border-blue-500/40 rounded-2xl p-6 transition-all duration-500 shadow-lg hover:shadow-[0_15px_40px_rgba(59,130,246,0.15)] group-hover:-translate-y-1 backdrop-blur-md">
+                                    <div className="relative min-w-[260px] md:min-w-[300px] w-fit min-h-[280px] md:min-h-[320px] flex flex-col justify-center overflow-hidden bg-white/5 border border-white/10 hover:border-blue-500/40 rounded-2xl p-6 md:p-8 transition-all duration-500 shadow-lg hover:shadow-[0_15px_40px_rgba(59,130,246,0.15)] group-hover:-translate-y-1 backdrop-blur-md">
                                         <div className="absolute inset-0 bg-gradient-to-br from-blue-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" />
                                         
-                                        <div className="relative z-10 flex flex-col gap-4">
+                                        <div className="relative z-10 flex flex-col gap-4 whitespace-normal break-words">
                                             <div className="flex flex-col gap-1.5">
-                                                <h3 className="text-2xl font-bold text-white group-hover:text-blue-300 transition-colors tracking-tight leading-tight">
+                                                <h3 className="text-xl md:text-2xl font-bold text-white group-hover:text-blue-300 transition-colors tracking-tight leading-tight">
                                                     {item.role}
                                                 </h3>
                                                 <h4 className="text-sm font-semibold text-blue-400">
