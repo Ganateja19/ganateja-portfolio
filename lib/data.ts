@@ -99,30 +99,6 @@ export const experience = [
 
 export const projects = [
   {
-    title: "Real-Time Healthcare Data Platform & Feature Store",
-    description: "Engineered a real-time healthcare data platform using PySpark, AWS Glue, and Kinesis, implementing medallion architecture and a centralized feature store to enable scalable analytics and ML workflows.",
-    techStack: ["PySpark", "AWS Glue", "Kinesis", "AWS Lambda", "Medallion Architecture"],
-    link: "https://github.com/Ganateja19/healthcare-data-platform",
-    github: "https://github.com/Ganateja19/healthcare-data-platform",
-    image: "./Healthcare.jpg",
-  },
-  {
-    title: "Enterprise Data Lakehouse with Medallion Architecture",
-    description: "Architected a cloud-native data lakehouse on AWS S3, Glue, and Snowflake, building scalable batch and streaming pipelines with optimized data models and governance for enterprise analytics.",
-    techStack: ["AWS S3", "AWS Glue", "Snowflake", "dbt", "Airflow"],
-    link: "https://github.com/Ganateja19/data-lakehouse",
-    github: "https://github.com/Ganateja19/data-lakehouse",
-    image: "./Datalakehouse-medallion.png",
-  },
-  {
-    title: "Streaming Data Pipeline for Real-Time Analytics",
-    description: "Developed low-latency streaming pipelines using Amazon Kinesis, PySpark Streaming, and AWS Lambda, enabling near real-time data processing and analytics for business-critical use cases.",
-    techStack: ["Amazon Kinesis", "PySpark Streaming", "AWS Lambda", "AWS S3", "CloudWatch"],
-    link: "https://github.com/Ganateja19/streaming-pipeline",
-    github: "https://github.com/Ganateja19/streaming-pipeline",
-    image: "./Realtime.png",
-  },
-  {
     title: "Iris Classifier UI",
     description: "Designed and developed an end-to-end machine learning web application that enables real-time classification of iris flower species based on user-provided biometric measurements. This application bridges machine learning concepts with frontend delivery, showcasing the ability to translate predictive models into intuitive, business-ready tools.",
     techStack: ["Python", "scikit-learn", "HTML5", "CSS3", "JavaScript"],
@@ -145,6 +121,30 @@ export const projects = [
     link: "https://github.com/Ganateja19/EduMind-AI-End-to-End-Student-Performance-Predictor",
     github: "https://github.com/Ganateja19/EduMind-AI-End-to-End-Student-Performance-Predictor",
     image: "./edumind-ai.png",
+  },
+  {
+    title: "Real-Time Healthcare Data Platform & Feature Store",
+    description: "Engineered a real-time healthcare data platform using PySpark, AWS Glue, and Kinesis, implementing medallion architecture and a centralized feature store to enable scalable analytics and ML workflows.",
+    techStack: ["PySpark", "AWS Glue", "Kinesis", "AWS Lambda", "Medallion Architecture"],
+    link: "https://github.com/Ganateja19/healthcare-data-platform",
+    github: "https://github.com/Ganateja19/healthcare-data-platform",
+    image: "./Healthcare.jpg",
+  },
+  {
+    title: "Enterprise Data Lakehouse with Medallion Architecture",
+    description: "Architected a cloud-native data lakehouse on AWS S3, Glue, and Snowflake, building scalable batch and streaming pipelines with optimized data models and governance for enterprise analytics.",
+    techStack: ["AWS S3", "AWS Glue", "Snowflake", "dbt", "Airflow"],
+    link: "https://github.com/Ganateja19/data-lakehouse",
+    github: "https://github.com/Ganateja19/data-lakehouse",
+    image: "./Datalakehouse-medallion.png",
+  },
+  {
+    title: "Streaming Data Pipeline for Real-Time Analytics",
+    description: "Developed low-latency streaming pipelines using Amazon Kinesis, PySpark Streaming, and AWS Lambda, enabling near real-time data processing and analytics for business-critical use cases.",
+    techStack: ["Amazon Kinesis", "PySpark Streaming", "AWS Lambda", "AWS S3", "CloudWatch"],
+    link: "https://github.com/Ganateja19/streaming-pipeline",
+    github: "https://github.com/Ganateja19/streaming-pipeline",
+    image: "./Realtime.png",
   }
 ];
 
