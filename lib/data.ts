@@ -1,49 +1,88 @@
-
 export const personalData = {
   name: "Ganateja Thurpati",
-  role: "Data Scientist",
-  bio: "Data Scientist with 5+ years of experience applying machine learning, multi-variate modeling, statistical analysis, and ETL automation to drive strategic business decisions.",
-  email: "ganateja19@gmail.com",
+  role: "Data Engineer",
+  bio: "Great data engineering isn't just about architecture; it's about asking the right questions, understanding business context, and building systems that compound in value. Passionate about data governance and observability. Advocate for data contracts, schema-first thinking, and cultures where data quality is non-negotiable.",
+  email: "ganateja02@gmail.com",
   socials: {
     github: "https://github.com/Ganateja19",
     linkedin: "https://www.linkedin.com/in/ganateja/"
   },
+  aboutParagraphs: [
+    "Data Engineer with over 5 years of experience in building scalable, cloud-native data platforms, specializing in supply chain analytics. Expertise in designing and maintaining robust data pipelines that ensure data accuracy and accessibility, while implementing data modeling and governance practices.",
+    "Proven track record of developing reporting solutions using SQL and Power BI, translating operational needs into actionable insights. Highly skilled in architecting cloud-native data lakehouses, establishing data contracts and schema cataloging, and orchestrating workflows using Apache Airflow and dbt across AWS and Snowflake environments."
+  ],
+  whoIAm: "Continuous learner obsessed with data reliability and quality. I've spent 5+ years transforming raw data into actionable intelligence—whether scaling pipelines to 500GB+ daily throughput or preventing $28K in unnecessary costs through smarter architecture. I believe great data engineering isn't just about building pipelines; it's about asking the right questions, understanding business context, and designing systems that compound in value over time. Passionate about data governance, observability, and schema-first thinking. I'm always exploring emerging tools, cost optimization patterns, and real-time streaming innovations to stay ahead of the curve.",
+  whyDataEngineering: "I'm drawn to data engineering because it sits at the intersection of architecture and impact. Every pipeline I build directly shapes the decisions an organization makes.",
+  currentlyExploring: [
+    "Real-time ML Pipelines",
+    "Cost Optimization Strategies",
+    "Data Mesh Patterns",
+    "Event-Driven Architectures"
+  ],
+  keyBeliefs: [
+    { statement: "Data quality over data volume", icon: "shield" },
+    { statement: "Observability prevents outages", icon: "eye" },
+    { statement: "Schema governance scales organizations", icon: "layers" },
+    { statement: "Cost efficiency is a feature", icon: "zap" }
+  ]
 };
 
-export const skills = {
-  "Analytics & Programming": ["Python", "R", "SQL", "SAS", "Java", "Node.js"],
-  "Packages": ["NumPy", "Pandas", "Matplotlib", "Scikit-learn", "TensorFlow", "Seaborn", "PyTorch"],
-  "Databases": ["SQL Server", "PostgreSQL", "MySQL", "Oracle", "Snowflake"],
-  "Data Management": ["ETL workflows", "Data Validation", "QA/QC workflows", "Google Analytics"],
-  "Visualization": ["Power BI", "Tableau", "Excel", "Ad-hoc reporting", "KPI & scorecard design"],
-  "Automation & Workflows": ["Microsoft Power Platform", "Airflow", "Informatica", "API integrations"],
-  "Clouds & Devops": ["AWS", "Azure", "GCP", "Git", "GitHub"],
-};
+export const impactMetrics = [
+  { value: "500GB+", label: "Daily Ingestion" },
+  { value: "60%", label: "Fewer Failures" },
+  { value: "$28K", label: "Annual Savings" },
+  { value: "20+", label: "Production Pipelines" }
+];
+
+export const skills = [
+  "Python", "SQL", "PySpark", "AWS S3", "Snowflake", "Airflow", "dbt",
+  "Kinesis", "Lambda", "Great Expectations", "Docker", "Git", "Power BI",
+  "PostgreSQL", "Kafka"
+];
 
 export const experience = [
   {
     company: "United Healthcare Group",
-    role: "Data Scientist",
-    period: "Oct 2025 - Present"
-  },
-  {
-    company: "University of Memphis",
-    role: "Research Data Scientist",
-    period: "Jan 2024 - Sep 2025"
+    role: "Data Engineer",
+    period: "Oct 2024 - Present"
   },
   {
     company: "Capgemini",
-    role: "Junior Data Scientist",
+    role: "Data Engineer",
     period: "Jan 2022 - Dec 2023"
   },
   {
     company: "Tech Mahindra",
-    role: "Data Analyst",
+    role: "Junior Data Engineer",
     period: "Sep 2020 - Dec 2021"
   }
 ];
 
 export const projects = [
+  {
+    title: "Real-Time Healthcare Data Platform & Feature Store",
+    description: "Engineered a real-time healthcare data platform using PySpark, AWS Glue, and Kinesis, implementing medallion architecture and a centralized feature store to enable scalable analytics and ML workflows.",
+    techStack: ["PySpark", "AWS Glue", "Kinesis", "AWS Lambda", "Medallion Architecture"],
+    link: "https://github.com/Ganateja19/ganateja-portfolio",
+    github: "https://github.com/Ganateja19/ganateja-portfolio",
+    image: "./healthcare-platform.jpg",
+  },
+  {
+    title: "Enterprise Data Lakehouse with Medallion Architecture",
+    description: "Architected a cloud-native data lakehouse on AWS S3, Glue, and Snowflake, building scalable batch and streaming pipelines with optimized data models and governance for enterprise analytics.",
+    techStack: ["AWS S3", "AWS Glue", "Snowflake", "dbt", "Airflow"],
+    link: "https://github.com/Ganateja19/ganateja-portfolio",
+    github: "https://github.com/Ganateja19/ganateja-portfolio",
+    image: "./enterprise-lakehouse.jpg",
+  },
+  {
+    title: "Streaming Data Pipeline for Real-Time Analytics",
+    description: "Developed low-latency streaming pipelines using Amazon Kinesis, PySpark Streaming, and AWS Lambda, enabling near real-time data processing and analytics for business-critical use cases.",
+    techStack: ["Amazon Kinesis", "PySpark Streaming", "AWS Lambda", "AWS S3", "CloudWatch"],
+    link: "https://github.com/Ganateja19/ganateja-portfolio",
+    github: "https://github.com/Ganateja19/ganateja-portfolio",
+    image: "./streaming-pipeline.jpg",
+  },
   {
     title: "Iris Classifier UI",
     description: "Designed and developed an end-to-end machine learning web application that enables real-time classification of iris flower species based on user-provided biometric measurements. This application bridges machine learning concepts with frontend delivery, showcasing the ability to translate predictive models into intuitive, business-ready tools.",
@@ -67,7 +106,7 @@ export const projects = [
     link: "https://github.com/Ganateja19/EduMind-AI-End-to-End-Student-Performance-Predictor",
     github: "https://github.com/Ganateja19/EduMind-AI-End-to-End-Student-Performance-Predictor",
     image: "./edumind-ai.png",
-  },
+  }
 ];
 
 export const education = [
@@ -87,24 +126,24 @@ export const education = [
 
 export const certifications = [
   {
+    title: "Supply Chain Management A-Z: Operations & Logistics",
+    issuer: "Udemy",
+    image: "./Supply_Chain_Management_Logistics.png"
+  },
+  {
+    title: "Generative AI Bootcamp",
+    issuer: "Outskill",
+    image: "./GEN_AI_Certification.png"
+  },
+  {
+    title: "3-Day Generative AI Bootcamp",
+    issuer: "GrowthSchool / Outskill",
+    image: "./3_Day_AI_Bootcamp.png"
+  },
+  {
     title: "AWS Certified Cloud Practitioner",
     issuer: "Amazon Web Services",
     image: "./AWS_Cloud_Practioner.jpg"
-  },
-  {
-    title: "Generative AI Fundamentals",
-    issuer: "Databricks",
-    image: "./Databricks_GENAI.jpg"
-  },
-  {
-    title: "Lean Six Sigma Green Belt",
-    issuer: "Council for Six Sigma Certification",
-    image: "./Lean_Sixsigma.png"
-  },
-  {
-    title: "Google Data Analytics Professional Certificate",
-    issuer: "Coursera",
-    image: "./Coursera_GD.png"
   },
   {
     title: "AWS Certified Machine Learning",
@@ -112,9 +151,24 @@ export const certifications = [
     image: "./AWS_ML&AI.png"
   },
   {
+    title: "Generative AI Fundamentals",
+    issuer: "Databricks",
+    image: "./Databricks_GENAI.jpg"
+  },
+  {
     title: "Databricks Lakehouse Fundamentals",
     issuer: "Databricks",
     image: "./Databricks_Fundamentals.jpg"
+  },
+  {
+    title: "Google Data Analytics Professional Certificate",
+    issuer: "Coursera",
+    image: "./Coursera_GD.png"
+  },
+  {
+    title: "Lean Six Sigma Green Belt",
+    issuer: "Council for Six Sigma Certification",
+    image: "./Lean_Sixsigma.png"
   },
   {
     title: "Verzeo Certification",

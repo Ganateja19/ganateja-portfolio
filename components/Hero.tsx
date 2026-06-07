@@ -1,31 +1,21 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Download, TerminalSquare } from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
 import { personalData } from "@/lib/data";
 import Link from "next/link";
 import SectionWrapper from "./SectionWrapper";
 
 const Hero = () => {
     return (
-        <div className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+        <div className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
             {/* Background Animated Gradients */}
             <div className="absolute inset-0 bg-[#030712] -z-20" />
             <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-[120px] -z-10 animate-pulse" />
             <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-600/10 rounded-full blur-[100px] -z-10 animate-pulse" style={{ animationDelay: '2s' }} />
 
             <SectionWrapper className="z-10 w-full">
-                <div className="flex flex-col items-center text-center gap-8 max-w-4xl mx-auto">
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.5 }}
-                        className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-md text-blue-300 text-sm font-medium tracking-wide mb-2"
-                    >
-                        <TerminalSquare className="w-4 h-4" />
-                        Available for new opportunities
-                    </motion.div>
-
+                <div className="flex flex-col items-center text-center gap-6 max-w-4xl mx-auto">
                     <motion.h1
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -45,10 +35,10 @@ const Hero = () => {
                     </motion.h2>
 
                     <motion.p
-                        initial={{ opacity: 0, y: 30 }}
+                        initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.3 }}
-                        className="max-w-2xl text-gray-400 text-lg md:text-xl leading-relaxed font-light mt-4"
+                        className="max-w-xl text-gray-400 text-lg md:text-xl leading-relaxed font-light"
                     >
                         {personalData.bio}
                     </motion.p>
@@ -57,7 +47,7 @@ const Hero = () => {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.4 }}
-                        className="flex flex-col sm:flex-row gap-5 mt-6 w-full sm:w-auto px-4 sm:px-0"
+                        className="flex flex-col sm:flex-row gap-5 mt-4 w-full sm:w-auto px-4 sm:px-0"
                     >
                         <Link
                             href="#projects"

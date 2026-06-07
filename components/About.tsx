@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { personalData } from "@/lib/data";
 import SectionWrapper from "./SectionWrapper";
 
 const About = () => {
@@ -16,24 +17,18 @@ const About = () => {
                     >
                         About Me
                     </motion.h2>
-                    <motion.p
-                        initial={{ opacity: 0, x: -20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.1 }}
-                        className="text-gray-400 text-lg leading-relaxed"
-                    >
-                        Data Scientist with 5+ years of experience applying machine learning, multi-variate modeling, statistical analysis, and ETL automation to drive strategic business decisions. Proficient in Python and R for predictive model development, data mining, and consumer analytics, including retention modeling and lead optimization.
-                    </motion.p>
-                    <motion.p
-                        initial={{ opacity: 0, x: -20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.2 }}
-                        className="text-gray-400 text-lg leading-relaxed"
-                    >
-                        Experienced in deploying models via MLOps workflows and collaborating with analytics and IT teams to communicate complex technical insights to non-technical stakeholders. Proven ability to leverage behavioral data and large-scale datasets across AWS, Azure, and Snowflake to deliver measurable operational impact.
-                    </motion.p>
+                    {personalData.aboutParagraphs.map((para, i) => (
+                        <motion.p
+                            key={i}
+                            initial={{ opacity: 0, x: -20 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.1 * (i + 1) }}
+                            className="text-gray-400 text-lg leading-relaxed"
+                        >
+                            {para}
+                        </motion.p>
+                    ))}
                 </div>
 
                 {/* Profile Image */}

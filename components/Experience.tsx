@@ -20,10 +20,10 @@ const Experience = () => {
                                     index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"
                                 }`}
                             >
-                                {/* Spacer element - pushes the card to the correct side on large screens */}
+                                {/* Spacer element */}
                                 <div className="hidden md:block md:w-[calc(50%-3rem)]" />
                                 
-                                {/* Glowing Timeline Node perfectly centered */}
+                                {/* Glowing Timeline Node */}
                                 <div className="absolute left-[32px] md:left-1/2 transform -translate-x-1/2 w-4 h-4 md:w-5 md:h-5 rounded-full border-2 md:border-[4px] border-[#030712] bg-blue-500 shadow-[0_0_15px_rgba(59,130,246,0.8)] z-10 group-hover:bg-white group-hover:shadow-[0_0_25px_rgba(255,255,255,1)] group-hover:scale-125 transition-all duration-500" />
 
                                 {/* Experience Card */}
@@ -37,7 +37,7 @@ const Experience = () => {
                                     <div className="relative overflow-hidden bg-white/5 border border-white/10 hover:border-blue-500/40 rounded-3xl p-6 md:p-8 transition-all duration-500 shadow-lg hover:shadow-[0_15px_40px_rgba(59,130,246,0.15)] group-hover:-translate-y-2 backdrop-blur-md">
                                         <div className="absolute inset-0 bg-gradient-to-br from-blue-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" />
                                         
-                                        <div className="relative z-10 flex flex-col gap-4">
+                                        <div className="relative z-10 flex flex-col gap-3">
                                             <div className="flex flex-col gap-1.5">
                                                 <h3 className="text-xl md:text-3xl font-bold text-white group-hover:text-blue-300 transition-colors tracking-tight leading-tight">
                                                     {item.role}

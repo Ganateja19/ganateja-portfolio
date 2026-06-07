@@ -7,8 +7,8 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Ganateja Thurpati | Data Scientist",
-  description: "Portfolio of Ganateja Thurpati - Data Scientist specializing in Machine Learning, Analytics, and Cloud Computing.",
+  title: "Ganateja Thurpati | Data Engineer",
+  description: "Portfolio of Ganateja Thurpati - Data Engineer specializing in scalable data platforms, cloud-native pipelines, and data governance across AWS and Snowflake environments.",
 };
 
 export default function RootLayout({

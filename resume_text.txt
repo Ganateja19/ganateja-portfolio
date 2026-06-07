@@ -1,0 +1,45 @@
+Ganateja Thurpati
+Data  Engineer
++1 901-335-4431 | ganateja02@gmail.com | | LinkedIn | Github
+SUMMARY
+Data Engineer with over 5 years of experience in building scalable, cloud-native data platforms, specializing in supply chain analytics. Expertise in designing and maintaining robust data pipelines that ensure data accuracy and accessibility, while implementing data modeling and governance practices. Proven track record of developing reporting solutions using SQL and Power BI, translating operational needs into actionable insights.
+PROFESSIONAL EXPERIENCE 
+Data Engineer, United Healthcare GroupOct 2024 - Present
+Engineered and sustained SQL-based data pipelines facilitating supply chain analytics, ensuring data accuracy and accessibility while ingesting 500GB+ daily clinical data into S3 data lake, reducing ingestion latency by 30%.
+Constructed and supervised data models enhancing reporting and analytics, ensuring data integrity and consistency while reducing latency from 2.4 seconds to 320 milliseconds.
+Designed and built data pipelines that enable sub-minute data availability for operational dashboards across multiple business units, enhancing decision-making capabilities.
+Created data models that support scalable reporting and analytics, generating 50+ curated features for downstream analytics stored in centralized feature stores.
+Established data governance practices ensuring data accuracy and integrity across systems, successfully reducing data incidents by 40% quarter-over-quarter, thereby enhancing decision-making capabilities.
+Data Engineer, CapgeminiJan 2022 - Dec 2023
+Architected and constructed data pipelines processing over 8 million records daily, ensuring reliable and fault-tolerant workflows for operational analytics.
+Enhanced data models for reporting and analytics, improving query efficiency and reducing operational costs by approximately $28K annually.
+Streamlined reporting workflows through automation, eliminating 1,200 manual reporting hours annually and enhancing overall pipeline reliability.
+Implemented comprehensive data governance practices that established robust schema integrity protocols, resulting in a significant 60% reduction in pipeline failures caused by upstream changes. 
+Established data contracts and schema governance using AWS Glue Data Catalog, reducing pipeline failures from upstream changes by 60% and ensuring SLA compliance.
+Junior Data Engineer, Tech MahindraSep 2020 - Dec 2021
+Developed data validation processes enforcing schema checks and data quality rules across multiple datasets, achieving 99.6% SLA adherence.
+Enhanced SQL pipelines for operational analytics, reducing processing time from 6 minutes to 38 seconds through effective indexing and execution plan tuning.
+Established CI/CD practices to enhance deployment reliability and reduce errors by 70% across data engineering environments. Played a key role in developing dimensional data models enhancing structured data availability for operational analytics and reporting use cases.
+Developed structured data models that enhance reporting capabilities, reducing ad-hoc data requests by 35% through improved accessibility and standardized reporting structures.
+PROJECTS
+ Real-Time Healthcare Data Platform & Feature Store
+Engineered a real-time healthcare data platform using PySpark, AWS Glue, and Kinesis, implementing medallion architecture and a centralized feature store to enable scalable analytics and ML workflows.
+Enterprise Data Lakehouse with Medallion Architecture
+ Architected a cloud-native data lakehouse on AWS S3, Glue, and Snowflake, building scalable batch and streaming pipelines with optimized data models and governance for enterprise analytics.
+Streaming Data Pipeline for Real-Time Analytics
+ Developed low-latency streaming pipelines using Amazon Kinesis, PySpark Streaming, and AWS Lambda, enabling near real-time data processing and analytics for business-critical use cases.
+
+EDUCATION
+ University of Memphis, Memphis, TN - Master’s, Data Science
+ Indian Institute of Information Technology, Jabalpur, India - Bachelor’s, Electronics & Communication Engineering
+
+SKILLS
+ Programming Language : Python, SQL, R
+Big Data & Distributed Systems : PySpark, Apache Spark, Apache Kafka
+Data Engineering & Pipelines : ETL/ELT Pipelines, Data Modeling (Star Schema, Dimensional Modeling),
+Batch & Streaming Pipelines, Feature Engineering, Data Lake & Medallion Architecture
+Cloud & Data Platforms : AWS (S3, AWS Glue, Lambda, Kinesis, Glue Data Catalog), Snowflake
+Workflow Orchestration & CI/CD : Apache Airflow, dbt, Git, GitHub, GitLab, CI/CD Pipelines
+Databases & Warehousing : Snowflake, SQL Server, PostgreSQL, MySQL
+Data Quality, Governance & Monitoring : Great Expectations, Data Contracts, Schema Management, Data Lineage, AWS CloudWatch, Logging & Alerting
+Containerization & Visualization : Docker, Kubernetes, Power BI, Tableau, Data Formats (Parquet, Avro, JSON)
