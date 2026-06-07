@@ -36,11 +36,11 @@ export const impactMetrics = [
 
 export const skillCategories = [
   {
-    category: "DATA ENGINEERING (Core)",
+    category: "DATA ENGINEERING",
     skills: ["Python", "SQL", "PySpark", "Data Modeling", "ETL/ELT", "Medallion Architecture", "AWS S3", "AWS Glue", "Snowflake", "Airflow", "dbt", "Data Contracts"]
   },
   {
-    category: "ERP & SYSTEMS (JD Critical)",
+    category: "ERP & SYSTEMS",
     skills: ["Salesforce", "Oracle", "Power Query", "System Integration", "API Connectors"]
   },
   {
