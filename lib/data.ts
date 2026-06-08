@@ -53,7 +53,7 @@ export const skillCategories = [
   },
   {
     category: "CLOUD & PLATFORMS",
-    skills: ["AWS (S3, Glue, Kinesis, Lambda, CloudWatch)", "Snowflake", "Power BI", "Tableau", "Looker", "PostgreSQL", "MySQL", "SQL Server"]
+    skills: ["AWS (S3, Glue, Kinesis, Lambda, CloudWatch)", "Azure", "GCP", "Snowflake", "Power BI", "Tableau", "Looker", "PostgreSQL", "MySQL", "SQL Server"]
   },
   {
     category: "ORCHESTRATION & AUTOMATION",
