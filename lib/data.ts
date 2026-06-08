@@ -178,7 +178,7 @@ export const certifications = [
     image: "./Supply_Chain_Management_Logistics.png"
   },
   {
-    title: "Lean Six Sigma Green Belt",
+    title: "Lean Six Sigma White Belt",
     issuer: "Council for Six Sigma Certification",
     image: "./Lean_Sixsigma.png"
   },
